@@ -18,6 +18,6 @@ fix_tip = int(total_bill) * int(tip_rate) * 0.01
 total_price = int(total_bill) + int(fix_tip)
 #calculate cost per head
 result = int(total_price) / int(split_num)
-print("Each person should pay: " ,"$",result)
+print (f"Each person should pay: ${result}")
 
 

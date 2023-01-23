@@ -2,7 +2,6 @@
 
 import random
 
-
 #Step 1 
 
 word_list = ["aardvark", "baboon", "camel"]
@@ -18,15 +17,15 @@ guess = input("Guess word : ").lower()
 
 
 #변수에서 단어 하나씩 추출할수 있는지 모르고 리스트로 변환해서 하나씩 대입 비교 한 경우
-chosen_word_list = list(chosen_word)
-a = 0
-for a in range(0,len(chosen_word_list)):
-    if guess == chosen_word_list[a]:
-        print("Right")
-    else :
-        print("Wrong")
-        a += 1
-print("-----")
+# chosen_word_list = list(chosen_word)
+# a = 0
+# for a in range(0,len(chosen_word_list)):
+#     if guess == chosen_word_list[a]:
+#         print("Right")
+#     else :
+#         print("Wrong")
+#         a += 1
+# print("-----")
 
 #변수의 각 알파벳과 입력값을 비교한 경우
 for letter in chosen_word:

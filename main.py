@@ -1,6 +1,11 @@
 
+a = "hi man"
+a = a.replace("hi", "No")
+print(a)
 
-a = 0
-while a < 10 :
-    print(a)
-    a += 1
+
+
+x = "abc"
+x = x.replace("b","")
+
+print(x)

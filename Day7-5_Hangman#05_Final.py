@@ -1,11 +1,11 @@
 import random
-import hangman_art
-import hangman_word
+import Day7hangman_art
+import Day7hangman_word
 
 print ("--------------------------\nWelcome to the Hangmang Game!")
-print (hangman_art.logo)
+print (Day7hangman_art.logo)
 
-word_list = hangman_word.word_list
+word_list = Day7hangman_word.word_list
 chosen_word = random.choice(word_list)
 
 #test code : 선택된 단어를 미리 알려줌
@@ -55,5 +55,5 @@ while not end_game :
         end_game = True
         print("You win!")
     # 생명력 수만큼 ASCII ART 출력
-    print(hangman_art.stages[lives])
+    print(Day7hangman_art.stages[lives])
 

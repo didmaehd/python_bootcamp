@@ -1,0 +1,15 @@
+
+
+word = input("word : ").lower()
+number = int(input("몇칸 뒤로 밀까? : "))
+
+list = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n"]
+position = list.index(word)
+reposition = position+number
+print(list[reposition])
+
+
+
+# def plus(str):
+#     if str in list:
+#str_replace = 

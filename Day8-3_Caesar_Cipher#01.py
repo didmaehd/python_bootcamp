@@ -40,4 +40,8 @@ if direction == "encode":
     encrypt(text,shift)
 elif direction == "decode":
     decrypt(text,shift)
+else :
+    print("Please restart this program and type 'encode' or 'decode.'")
+    
+
 

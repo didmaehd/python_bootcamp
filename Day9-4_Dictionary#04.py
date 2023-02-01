@@ -28,6 +28,6 @@ def add_new_country(visit_country,visit_count,visit_cities):
 #🚨 Do not change the code below
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
 # travel_log.append({"country":"Russia","visits":2,"cities":["Moscow","Saint Petersburg"]})
-add_new_country("Korea","16",["Seoul","Busan","Ulsan","Bundang"])
+add_new_country("Korea",16,["Seoul","Busan","Ulsan","Bundang"])
 print(travel_log)
 

@@ -45,4 +45,4 @@ while end_game: #TODO-4 retry 여부 확인하여 재실행 판단하기
     retry = input("Type 'yes' if you want to go again, Otherwise type 'no' : ") #TODO-4 retry 여부 확인하여 재실행 판단하기
     if retry == "no":
         end_game = False
-        print("Gooe-Bye")
+        print("Good-Bye")

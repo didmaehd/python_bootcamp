@@ -1,8 +1,8 @@
 import os
 import Day9_ascii_logo
 # os.system('cls')
-
 print(Day9_ascii_logo.logo)
+
 print("Welcome to the secret auction program. ")
 end_game = True
 user_dict = {}

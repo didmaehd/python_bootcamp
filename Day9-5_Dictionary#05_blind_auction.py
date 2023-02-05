@@ -1,3 +1,5 @@
+# 비밀 경매 프로그램 생성
+
 import os
 import Day9_ascii_logo
 # os.system('cls')

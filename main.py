@@ -7,3 +7,12 @@ for name in dict:
         score = dict[name]
         winner =  name
 print(winner, score)
+
+
+
+dict = {"a":"A", "b":6,"c":9,"d":3,"e":7}
+print (dict["a"])
+
+import random
+result = random.randrange(1,11)
+print(result)

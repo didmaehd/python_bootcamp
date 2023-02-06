@@ -1,3 +1,5 @@
+# 비밀 경매 혼자 만들어보기
+
 import os
 import Day9_ascii_logo
 # os.system('cls')

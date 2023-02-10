@@ -1,3 +1,5 @@
+#year과 month값을 받아서 윤년을 체크하고, 해당 월의 일수를 output하는 함수
+
 def is_leap(year):
   if year % 4 == 0:
     if year % 100 == 0:
@@ -14,8 +16,6 @@ def is_leap(year):
 def days_in_month(year, month):
     if month > 12 or month < 1:
         return ("You didn't enter vaild month")
-    if year and month is not str:
-        return ("You didn't enter vaild number")
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] 
     if is_leap(year) == True and month == 2 :
         return 29

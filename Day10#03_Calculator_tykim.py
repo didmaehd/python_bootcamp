@@ -1,3 +1,5 @@
+# 10일차 과제 맨땅 헤딩
+
 import os
 import Day10_art
 print (Day10_art.logo)
@@ -14,6 +16,7 @@ def multiplication(f_number,s_number):
 def division(f_number,s_number):
     return f_number / s_number
 
+#첫번째 계산
 while calc:
     f_number = int(input("What's the first number? : "))
     operation = input("""
@@ -23,9 +26,6 @@ while calc:
 /
 Pick an operation : """)
     s_number = int(input("What's the second number? : "))
-
-
-
     if operation == "+" :
         result = (addition(f_number,s_number))
     if operation == "-" :
@@ -41,6 +41,7 @@ Pick an operation : """)
     retry = input(f"Type 'y' to continue calculatiing with {stored_number}, or type 'n' to start a new calculation : ")
     if retry == "y":
         calc = False
+        #두번째 이후 저장값으로 계산 로직
         recal = True
         while recal :
             operation = input("Pick an operation : ")

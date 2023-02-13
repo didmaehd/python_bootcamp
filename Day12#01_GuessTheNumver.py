@@ -1,10 +1,13 @@
+
+#if + while문으로 해결
+
 import random
 from Day12_art import logo
 print(logo)
 print ("Welcome to the Number Guessing Game!")
 print ("I'm thinkin of a number between 1 and 100.")
 
-#모드 질문 > 대답에따라 기회수 안내
+#모드 선택 > 대답에따라 기회수 안내
 choose_mode = input("Choose the diffculty. Type 'hard' or 'easy' : ")
 def attempts(answer):
     if answer == "hard":
@@ -18,7 +21,7 @@ print(f"You have {your_attempts} attempts remaining to guess the number.")
 correct_answer = random.randrange(1,101)
 print (f"The correct answer is {correct_answer}.")
 
-#유저 인풋 받음 -> 비교 및 처리
+#유저 인풋 받음 -> 비교 및 처리 -> 반복 -> 남은 기회 0이면 종료
 start_game = True
 while start_game : 
     user_guess = int(input("Makr a Guess : "))
@@ -37,6 +40,8 @@ while start_game :
              start_game = False
         else:
             print("Try again.")
+
+
 
 
 

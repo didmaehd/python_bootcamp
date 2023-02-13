@@ -17,10 +17,27 @@
 # result = random.randrange(1,11)
 # print(result)
 
-a = "global"
-def tykim():
-    a = "local"
-    print(a)
+# a = "global"
+# def tykim():
+#     a = "local"
+#     print(a)
 
-tykim()
-print(a)
+# tykim()
+# print(a)
+
+
+#함수 개념
+#인풋을 받아서 어떤 처리를 거친후에 아웃풋을 만들어야 하는 경우
+#나온 결과를 재활용 할 경우
+
+#인풋을 받아서 
+
+def testa (a):
+    return a + 100
+
+
+def testb (b):
+    return testa(100) + b
+
+result = testb(100)
+print(result) 

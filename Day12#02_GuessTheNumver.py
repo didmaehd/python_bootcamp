@@ -52,8 +52,3 @@ while start_game :
     user_guess = int(input("Makr a Guess : "))
     compare(user_guess,correct_answer)
 
-
-
-
-
-

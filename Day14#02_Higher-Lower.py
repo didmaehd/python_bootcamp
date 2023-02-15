@@ -1,3 +1,5 @@
+#compare 함수로 구현 , 함수내에서 아웃풋
+
 import random
 import os
 from Day14logo import logo

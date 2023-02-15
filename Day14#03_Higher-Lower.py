@@ -1,3 +1,4 @@
+# 함수의 리턴값에따라 아웃풋 만들어보기
 import random
 import os
 from Day14logo import logo

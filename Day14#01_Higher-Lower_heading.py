@@ -1,3 +1,6 @@
+#조건문으로 구현
+
+
 import random
 import os
 import Day14logo

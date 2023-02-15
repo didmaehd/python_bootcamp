@@ -6,6 +6,7 @@
 #     if dict[name] > score :
 #         score = dict[name]
 #         winner =  name
+#         print(name)
 # print(winner, score)
 
 
@@ -32,12 +33,28 @@
 
 #인풋을 받아서 
 
-def testa (a):
-    return a + 100
+# def testa (a):
+#     return a + 100
 
 
-def testb (b):
-    return testa(100) + b
+# def testb (b):
+#     return testa(100) + b
 
-result = testb(100)
-print(result) 
+# result = testb(100)
+# print(result) 
+
+import random
+dic = [
+    {
+    "이름":"진", 
+    "팔로어": 234,
+    },
+    {
+    "이름":"뷔", 
+    "팔로어 ": 342,
+    }
+       ]
+
+a = random.choice(dic)
+print(a["이름"])
+print(a["팔로어"])

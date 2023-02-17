@@ -62,6 +62,3 @@ while game_should_continue :
         print(f"Sorry, that's wrong. final score : {score}")
 
 
-#이러면 어떤 경우든 B값이 A값으로 치환되는데.
-#A가 정답이면 A가 그대로이고
-#B가 정답이면 B가 A가 되어야함

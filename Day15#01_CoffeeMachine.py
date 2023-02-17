@@ -60,13 +60,14 @@ while run_coffee :
         for coin in coin_list:
             coins = int(input(f"How namy {coin} ? : "))
             if coin == "quarters":
-                user_coin = coins * 25
+                a = coins * 25
             if coin == "dimes":
-                user_coin = user_coin + coins * 10
+                b = coins * 10
             if coin == "nickles":
-                user_coin = user_coin + coins * 5
+                c = coins * 5
             if coin == "pennies":
-                user_coin = user_coin + coins * 2.5
+                d = coins * 2.5
+        user_coin = a+b+c+d
         result =(check_coins(order,user_coin))
         
         if result == "fail_money":

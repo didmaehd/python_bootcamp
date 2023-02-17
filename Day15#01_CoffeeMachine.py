@@ -2,6 +2,7 @@ MENU = {
     "espresso": {
         "ingredients": {
             "water": 50,
+            "milk": 0,
             "coffee": 18,
         },
         "cost": 1.5,
@@ -29,29 +30,24 @@ resources = {
     "coffee": 100,
 }
 
+def check_resources (order):
+    if resources["water"] < MENU[order]["ingredients"]["water"] or resources["coffee"] < MENU[order]["ingredients"]["coffee"] or resources["milk"] < MENU[order]["ingredients"]["milk"] :
+        print ("Sorry! not enough resources")
+    else :
+        user_order(order)
+
+def check_coins
 
 #make coffee
 def user_order(order):
-    if order == "espresso":
-        #리소스가 하나라도 재료보다 적으면 실패 리턴
+    if order :
         #동전에 금액보다 적으면 실패 리턴
+        #리소스에서 커피 물 우유 양을 빼준다
         resources["water"] -= MENU[order]["ingredients"]["water"] 
         resources["coffee"] -= MENU[order]["ingredients"]["coffee"] 
+        resources["milk"] -= MENU[order]["ingredients"]["milk"] 
         print(f"{order} here!")
-    elif order == "latte":
-        #리소스가 하나라도 재료보다 적으면 실패
-        #동전에 금액보다 적으면 실패
-        resources["water"] -= MENU[order]["ingredients"]["water"] 
-        resources["coffee"] -= MENU[order]["ingredients"]["coffee"] 
-        print(f"{order} here!")
-    elif order == "cappuccino":
-        #리소스가 하나라도 재료보다 적으면 실패
-        #동전에 금액보다 적으면 실패
-        resources["water"] -= MENU[order]["ingredients"]["water"] 
-        resources["coffee"] -= MENU[order]["ingredients"]["coffee"] 
-        print(f"{order} here!")
-        
-        
+
 run_coffee = True
 while run_coffee :
 #prompt user by asking 
@@ -64,8 +60,12 @@ while run_coffee :
         for i in resources:
             print(f"{i} : {resources[i]}")
     else :
-        user_order(order)
+        check_resources (order)
+        # user_order(order)
+
 #Check resources sufficient
+#리소스가 하나라도 재료보다 적으면 실패 리턴
+
 #process coins
 #동전 인풋받아서 센트로 합산한 변수 만들기 = 
 

@@ -51,7 +51,7 @@ def process_coins():
 def is_transaction_successful(money_received, drink_cost):
     if money_received >= drink_cost:
         change = round(money_received - drink_cost, 2)
-        print (f"Here is ${change}in change.")
+        print (f"Here is ${change} in change.")
         global profit
         profit += drink_cost
         return True
@@ -71,10 +71,10 @@ while is_on :
     if choice == "off":
         is_on = False
     elif choice == "report":
-        print (f"Water : {resources['water']}")
-        print (f"Milk : {resources['milk']}")
-        print (f"Coffee : {resources['coffee']}")
-        print (f"Money : {profit}")
+        print (f"Water : {resources['water']}ml")
+        print (f"Milk : {resources['milk']}ml")
+        print (f"Coffee : {resources['coffee']}ml")
+        print (f"Money : ${profit}")
     else :
         drink = MENU[choice]
         if is_resources_sufficient(drink["ingredients"]):

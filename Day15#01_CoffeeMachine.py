@@ -1,3 +1,5 @@
+#스스리 해보기
+
 MENU = {
     "espresso": {
         "ingredients": {
@@ -54,20 +56,19 @@ while run_coffee :
     elif order == "report":
         for i in resources:
             print(f"{i} : {resources[i]}")
-        print(f"Money : {user_coin}")
+        print(f"Money : ${user_coin}")
     else :
         coin_list = ["quarters", "dimes","nickles","pennies"]
         for coin in coin_list:
             coins = int(input(f"How namy {coin} ? : "))
             if coin == "quarters":
-                a = coins * 25
+                user_coin = user_coin + coins * 0.25
             if coin == "dimes":
-                b = coins * 10
+                user_coin = user_coin + coins * 0.1
             if coin == "nickles":
-                c = coins * 5
+                user_coin = user_coin + coins * 0.05
             if coin == "pennies":
-                d = coins * 2.5
-        user_coin = a+b+c+d
+                user_coin = user_coin + coins * 0.01
         result =(check_coins(order,user_coin))
         
         if result == "fail_money":
@@ -81,5 +82,6 @@ while run_coffee :
             resources["coffee"] -= MENU[order]["ingredients"]["coffee"] 
             resources["milk"] -= MENU[order]["ingredients"]["milk"] 
             user_coin -= MENU[order]["cost"]
-            print(f"Here is ${user_coin} in change.")
+            print(f"Here is ${round(user_coin,2)} in change.")
             print(f"{order} here!")
+

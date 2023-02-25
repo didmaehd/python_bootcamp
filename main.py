@@ -1,5 +1,6 @@
+import inspect
+import random
 
+# print(inspect.getfile(random))
 
-dic = {"1":["1+1\n 1:",2,3]}
-
-print(dic)
+print(inspect.getsource(random))

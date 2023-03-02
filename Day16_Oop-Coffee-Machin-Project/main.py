@@ -5,20 +5,22 @@ from money_machine import MoneyMachine
 
 
 # 1 print report
-a = CoffeeMaker()
-print(a.report())
-b = MoneyMachine()
-print(b.report())
+money_machine = MoneyMachine()
+coffee_maker = CoffeeMaker()
+menu = Menu()
 
+coffee_maker.report(),money_machine.report()
+menu.get_items()
 # is_on = True
-# while is_on :
-#     choice = input("What would you like? (espresso/latte/cappuccino): ")
-#     if choice == "off":
-#         is_on = False
-
-
+# while is_on:
+#     options = menu.get_items()
 
 # 2 check resources sufficient
+
+
+
+
+
 # 3 process Coins
 # 4 check transaction successful?
 # 5 Make Coffee

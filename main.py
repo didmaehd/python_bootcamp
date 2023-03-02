@@ -1,6 +1,10 @@
-import inspect
-import random
+resources = {
+    "water": 300,
+    "milk": 200,
+    "coffee": 100,
+}
 
-# print(inspect.getfile(random))
+print(resources)
 
-print(inspect.getsource(random))
+resources["water"] += 300
+print(resources)

@@ -7,6 +7,12 @@ class CoffeeMaker:
             "coffee": 100,
         }
 
+    def refill(self):
+        self.resources["water"] += 300
+        self.resources["milk"] += 300
+        self.resources["coffee"] += 300
+        print("Refill complete!")
+
     def report(self):
         """Prints a report of all resources."""
         print(f"Water: {self.resources['water']}ml")

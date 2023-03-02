@@ -37,3 +37,10 @@ class MoneyMachine:
             print("Sorry that's not enough money. Money refunded.")
             self.money_received = 0
             return False
+    def refill_payment(self):
+        if self.profit >= 1 :
+            self.profit -= 1
+            return True
+        else :
+            print("Sorry that's not enough money. Money refunded.")
+            return False
